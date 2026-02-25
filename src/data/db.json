@@ -1,0 +1,285 @@
+{
+  "requests": [
+    {
+      "id": 1,
+      "requester_name": "Иван Иванов",
+      "email": "ivan@mail.ru",
+      "phone": "+7000000000",
+      "subject": "Тест",
+      "body": "Описание проблемы",
+      "attachments": [],
+      "status": "in_progress",
+      "priority": "normal",
+      "assigned_to": null,
+      "created_at": "2026-02-25T08:49:24.674Z",
+      "updated_at": "2026-02-25T08:49:24.855Z",
+      "public_token": "b6ede5bb5023400fc37715516c6e2cc8"
+    },
+    {
+      "id": 2,
+      "requester_name": "Иван Иванов",
+      "email": "ivan@mail.ru",
+      "phone": "+7000000000",
+      "subject": "Тест",
+      "body": "Описание проблемы",
+      "attachments": [],
+      "status": "in_progress",
+      "priority": "normal",
+      "assigned_to": null,
+      "created_at": "2026-02-25T08:50:16.489Z",
+      "updated_at": "2026-02-25T08:50:16.685Z",
+      "public_token": "b7b7cc446fef8d8480965d3140cb7cad"
+    },
+    {
+      "id": 3,
+      "requester_name": "Иван Иванов",
+      "email": "ivan@mail.ru",
+      "phone": "+7000000000",
+      "subject": "Тест",
+      "body": "Описание проблемы",
+      "attachments": [],
+      "status": "in_progress",
+      "priority": "normal",
+      "assigned_to": null,
+      "created_at": "2026-02-25T08:50:21.371Z",
+      "updated_at": "2026-02-25T08:50:21.536Z",
+      "public_token": "9994cd84d470dd0e1145d346fe99cb35"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "request_id": 1,
+      "author_id": null,
+      "author_type": "user",
+      "body": "Описание проблемы",
+      "attachments": [],
+      "created_at": "2026-02-25T08:49:24.674Z",
+      "read_flag": false
+    },
+    {
+      "id": 2,
+      "request_id": 1,
+      "author_id": null,
+      "author_type": "user",
+      "body": "Уточните модель",
+      "attachments": [],
+      "created_at": "2026-02-25T08:49:24.855Z",
+      "read_flag": false
+    },
+    {
+      "id": 3,
+      "request_id": 2,
+      "author_id": null,
+      "author_type": "user",
+      "body": "Описание проблемы",
+      "attachments": [],
+      "created_at": "2026-02-25T08:50:16.489Z",
+      "read_flag": false
+    },
+    {
+      "id": 4,
+      "request_id": 2,
+      "author_id": null,
+      "author_type": "user",
+      "body": "Уточните модель",
+      "attachments": [],
+      "created_at": "2026-02-25T08:50:16.685Z",
+      "read_flag": false
+    },
+    {
+      "id": 5,
+      "request_id": 3,
+      "author_id": null,
+      "author_type": "user",
+      "body": "Описание проблемы",
+      "attachments": [],
+      "created_at": "2026-02-25T08:50:21.372Z",
+      "read_flag": false
+    },
+    {
+      "id": 6,
+      "request_id": 3,
+      "author_id": null,
+      "author_type": "user",
+      "body": "Уточните модель",
+      "attachments": [],
+      "created_at": "2026-02-25T08:50:21.536Z",
+      "read_flag": false
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "email": "admin@local",
+      "password_hash": "bee14723affcb7ff0f788f317fb26026:8672d9b0eaaab1e0d9cb9d0878e043f1dddd76213d383e8ade52d241936e29606b52311d9ddee726519eac3023340016f60c38d0a992e1f7a871bd2c284461b1",
+      "role": "admin"
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": 1,
+      "user_id": null,
+      "action": "request_created",
+      "target_type": "request",
+      "target_id": 1,
+      "timestamp": "2026-02-25T08:49:24.676Z",
+      "meta": {
+        "email": "ivan@mail.ru"
+      }
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "action": "login",
+      "target_type": "user",
+      "target_id": 1,
+      "timestamp": "2026-02-25T08:49:24.833Z",
+      "meta": {}
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "action": "request_updated",
+      "target_type": "request",
+      "target_id": 1,
+      "timestamp": "2026-02-25T08:49:24.848Z",
+      "meta": {
+        "status": "in_progress"
+      }
+    },
+    {
+      "id": 4,
+      "user_id": null,
+      "action": "message_added",
+      "target_type": "request",
+      "target_id": 1,
+      "timestamp": "2026-02-25T08:49:24.857Z",
+      "meta": {
+        "message_id": 2
+      }
+    },
+    {
+      "id": 5,
+      "user_id": null,
+      "action": "request_created",
+      "target_type": "request",
+      "target_id": 2,
+      "timestamp": "2026-02-25T08:50:16.490Z",
+      "meta": {
+        "email": "ivan@mail.ru"
+      }
+    },
+    {
+      "id": 6,
+      "user_id": 1,
+      "action": "login",
+      "target_type": "user",
+      "target_id": 1,
+      "timestamp": "2026-02-25T08:50:16.657Z",
+      "meta": {}
+    },
+    {
+      "id": 7,
+      "user_id": 1,
+      "action": "request_updated",
+      "target_type": "request",
+      "target_id": 2,
+      "timestamp": "2026-02-25T08:50:16.672Z",
+      "meta": {
+        "status": "in_progress"
+      }
+    },
+    {
+      "id": 8,
+      "user_id": null,
+      "action": "message_added",
+      "target_type": "request",
+      "target_id": 2,
+      "timestamp": "2026-02-25T08:50:16.686Z",
+      "meta": {
+        "message_id": 4
+      }
+    },
+    {
+      "id": 9,
+      "user_id": null,
+      "action": "request_created",
+      "target_type": "request",
+      "target_id": 3,
+      "timestamp": "2026-02-25T08:50:21.373Z",
+      "meta": {
+        "email": "ivan@mail.ru"
+      }
+    },
+    {
+      "id": 10,
+      "user_id": 1,
+      "action": "login",
+      "target_type": "user",
+      "target_id": 1,
+      "timestamp": "2026-02-25T08:50:21.516Z",
+      "meta": {}
+    },
+    {
+      "id": 11,
+      "user_id": 1,
+      "action": "request_updated",
+      "target_type": "request",
+      "target_id": 3,
+      "timestamp": "2026-02-25T08:50:21.527Z",
+      "meta": {
+        "status": "in_progress"
+      }
+    },
+    {
+      "id": 12,
+      "user_id": null,
+      "action": "message_added",
+      "target_type": "request",
+      "target_id": 3,
+      "timestamp": "2026-02-25T08:50:21.537Z",
+      "meta": {
+        "message_id": 6
+      }
+    }
+  ],
+  "refresh_tokens": [
+    {
+      "token": "d65097c8-1ae5-4289-83a2-9a79eab11624",
+      "user_id": 1,
+      "exp": 1772614164831
+    },
+    {
+      "token": "81329aa6-6868-4db4-be1f-a7e642fcc451",
+      "user_id": 1,
+      "exp": 1772614216655
+    },
+    {
+      "token": "a72b912c-336d-4335-9574-6118ce7a9177",
+      "user_id": 1,
+      "exp": 1772614221511
+    }
+  ],
+  "consents": [
+    {
+      "id": 1,
+      "request_id": 1,
+      "accepted_at": "2026-02-25T08:49:24.674Z",
+      "ip": "::ffff:127.0.0.1"
+    },
+    {
+      "id": 2,
+      "request_id": 2,
+      "accepted_at": "2026-02-25T08:50:16.489Z",
+      "ip": "::ffff:127.0.0.1"
+    },
+    {
+      "id": 3,
+      "request_id": 3,
+      "accepted_at": "2026-02-25T08:50:21.372Z",
+      "ip": "::ffff:127.0.0.1"
+    }
+  ]
+}
