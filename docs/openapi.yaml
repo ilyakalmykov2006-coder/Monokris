@@ -1,0 +1,29 @@
+openapi: 3.0.3
+info:
+  title: Monokris Request System API
+  version: 1.0.0
+paths:
+  /api/requests:
+    post:
+      summary: Создать заявку
+      requestBody:
+        required: true
+      responses:
+        '201': { description: Created }
+    get:
+      summary: Список заявок
+      responses:
+        '200': { description: OK }
+  /api/requests/{id}:
+    get:
+      summary: Получить заявку
+      parameters: [{name: id, in: path, required: true, schema: {type: integer}}]
+      responses: {'200': {description: OK}}
+    patch:
+      summary: Обновить заявку
+      responses: {'200': {description: OK}}
+  /api/requests/{id}/messages:
+    get: { summary: Получить сообщения, responses: {'200': {description: OK}} }
+    post: { summary: Добавить сообщение, responses: {'201': {description: Created}} }
+  /api/auth/login:
+    post: { summary: Авторизация сотрудника, responses: {'200': {description: OK}} }

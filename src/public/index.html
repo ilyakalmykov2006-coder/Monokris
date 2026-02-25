@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Monokris Service Desk</title><link rel="stylesheet" href="/styles.css"></head>
+<body><header><nav><strong>Monokris</strong><div><a href="/index.html">Главная</a><a href="/contacts.html">Контакты</a><a href="/admin.html">Админка</a></div></nav></header>
+<main class="container">
+<section class="hero"><h1>Корпоративная система заявок</h1><p>Минималистичный дизайн и базовая навигация в стиле корпоративного сайта.</p></section>
+<section class="card"><h2>Создать заявку</h2><form id="requestForm" class="grid">
+<input name="requester_name" placeholder="ФИО" required><input name="email" type="email" placeholder="E-mail" required>
+<input name="phone" placeholder="Телефон" required><input name="subject" placeholder="Тема" required>
+<textarea class="full" name="body" placeholder="Сообщение" rows="5" required></textarea>
+<label class="full">Файл (pdf/jpg/png до 5МБ) <input name="attachment" type="file" accept=".pdf,.jpg,.jpeg,.png"></label>
+<label class="full"><input type="checkbox" name="consent" value="1" required> Согласен на обработку персональных данных</label>
+<div><small id="captchaQ"></small><input name="captcha_answer" placeholder="Ответ CAPTCHA" required></div>
+<input type="hidden" name="captcha_expected" id="captchaE"><button class="full" type="submit">Отправить</button></form>
+<p id="out"></p></section></main>
+<script src="/main.js"></script></body></html>
